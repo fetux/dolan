@@ -25,7 +25,7 @@ SECRET_KEY = 'g6%o^c&^mt^g=#+*a38uv7m)*9_r5i*0-ht%r6r=7bfxygs393'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["www.patriciodolan.com", "patriciodolan.com"]
 
 
 # Application definition
