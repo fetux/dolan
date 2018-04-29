@@ -125,9 +125,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     <li>
                         <div class="project-fur">
-                            <a href="#" data-toggle="modal" data-target="#propModal-{{ prop.id }}" style="max-height: 185px; overflow: hidden;">
-                                <img class="img-responsive" src="{{ MEDIA_URL }}{{ prop.images.all.0.image }}" alt="" />
-                            </a>
+                            <div style="max-height: 185px; overflow: hidden;">
+                                <a href="#" data-toggle="modal" data-target="#propModal-{{ prop.id }}">
+                                    <img class="img-responsive" src="{{ MEDIA_URL }}{{ prop.images.all.0.image }}" alt="" />
+                                </a>
+                            </div>
                             <div class="fur">
                                 <div class="fur1">
                                     <span class="fur-money">{{ prop.title }}</span>
@@ -236,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $("#flexiselProps").flexisel({
             visibleItems:3,
             animationSpeed: 1000,
-            autoPlay: false,
+            autoPlay: true,
             autoPlaySpeed: 3000,
             pauseOnHover: true,
             enableResponsiveBreakpoints: true,
