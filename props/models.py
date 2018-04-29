@@ -6,7 +6,7 @@ from django.db import models
 
 class Prop(models.Model):
     title = models.CharField(max_length=50, verbose_name='Titulo')
-    price = models.FloatField(null=True, blank=True, verbose_name='Precio (opcional)')
+    price = models.CharField(max_length=20, null=True, blank=True, verbose_name='Precio (opcional)')
     location = models.CharField(max_length=100, verbose_name='Ubicacion')
     desc = models.TextField(verbose_name='Descripcion')
 
